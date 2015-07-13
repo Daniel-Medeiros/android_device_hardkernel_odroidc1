@@ -34,6 +34,15 @@ PRODUCT_COPY_FILES += \
 PRODUCT_CHARACTERISTICS := tablet
 PRODUCT_AAPT_CONFIG := normal hdpi xhdpi xxhdpi
 PRODUCT_AAPT_PREF_CONFIG := xhdpi xxhdpi
+
+PRODUCT_COPY_FILES += \
+    device/hardkernel/odroidc1/idc/ft5x06.idc:system/usr/idc/ft5x06.idc \
+    device/hardkernel/odroidc1/idc/pixcir168.idc:system/usr/idc/pixcir168.idc \
+    device/hardkernel/odroidc1/idc/ssd253x-ts.idc:system/usr/idc/ssd253x-ts.idc \
+    device/hardkernel/odroidc1/idc/Vendor_222a_Product_0001.idc:system/usr/idc/Vendor_222a_Product_0001.idc \
+    device/hardkernel/odroidc1/idc/Vendor_dead_Product_beef.idc:system/usr/idc/Vendor_dead_Product_beef.idc
+
+
 PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/rootdir/init.odroidc.rc:root/init.odroidc.rc \
 	$(LOCAL_PATH)/rootdir/init.odroidc.usb.rc:root/init.odroidc.usb.rc \
