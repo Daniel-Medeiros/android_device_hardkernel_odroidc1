@@ -26,5 +26,5 @@ PRODUCT_COPY_FILES := \
 # Wifi config
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/wifi/rt2870.bin:root/lib/firmware/rt2870.bin \
-    device/hardkernel/odroidc/wifi/RT2870STA.dat:system/etc/Wireless/RT2870STA/RT2870STA.dat \
-    device/hardkernel/odroidc/wifi/wifi_id_list.txt:system/etc/wifi_id_list.txt
+    device/hardkernel/odroidc1/wifi/RT2870STA.dat:system/etc/Wireless/RT2870STA/RT2870STA.dat \
+    device/hardkernel/odroidc1/wifi/wifi_id_list.txt:system/etc/wifi_id_list.txt
