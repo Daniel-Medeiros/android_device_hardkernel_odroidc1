@@ -36,22 +36,22 @@ PRODUCT_PACKAGES += \
     com.android.nfc_extras
 # NFCEE access control
 ifeq ($(TARGET_BUILD_VARIANT),user)
-    NFCEE_ACCESS_PATH := device/hardkernel/common/nfc/nfcee_access.xml
+    NFCEE_ACCESS_PATH := device/hardkernel/odroidc1/nfc/nfcee_access.xml
 else
-    NFCEE_ACCESS_PATH := device/hardkernel/common/nfc/nfcee_access_debug.xml
+    NFCEE_ACCESS_PATH := device/hardkernel/odroidc1/nfc/nfcee_access_debug.xml
 endif
 
 # NFC access control + feature files + configuration
-copyNfcFirmware = $(subst XXXX,$(strip $(1)),device/hardkernel/common/nfc/firmware/XXXX:/system/vendor/firmware/XXXX)
+copyNfcFirmware = $(subst XXXX,$(strip $(1)),device/hardkernel/odroidc1/nfc/firmware/XXXX:/system/vendor/firmware/XXXX)
 PRODUCT_COPY_FILES += \
     $(NFCEE_ACCESS_PATH):system/etc/nfcee_access.xml \
     frameworks/native/data/etc/com.android.nfc_extras.xml:system/etc/permissions/com.android.nfc_extras.xml \
     frameworks/native/data/etc/android.hardware.nfc.xml:system/etc/permissions/android.hardware.nfc.xml \
-    device/hardkernel/common/nfc/libnfc-brcm.conf:system/etc/libnfc-brcm.conf \
-    device/hardkernel/common/nfc/libnfc-brcm-20791b03.conf:system/etc/libnfc-brcm-20791b03.conf \
-    device/hardkernel/common/nfc/libnfc-brcm-20791b04.conf:system/etc/libnfc-brcm-20791b04.conf \
-    device/hardkernel/common/nfc/libnfc-brcm-20791b05.conf:system/etc/libnfc-brcm-20791b05.conf \
-    device/hardkernel/common/nfc/libnfc-brcm-43341b00.conf:system/etc/libnfc-brcm-43341b00.conf \
+    device/hardkernel/odroidc1/nfc/libnfc-brcm.conf:system/etc/libnfc-brcm.conf \
+    device/hardkernel/odroidc1/nfc/libnfc-brcm-20791b03.conf:system/etc/libnfc-brcm-20791b03.conf \
+    device/hardkernel/odroidc1/nfc/libnfc-brcm-20791b04.conf:system/etc/libnfc-brcm-20791b04.conf \
+    device/hardkernel/odroidc1/nfc/libnfc-brcm-20791b05.conf:system/etc/libnfc-brcm-20791b05.conf \
+    device/hardkernel/odroidc1/nfc/libnfc-brcm-43341b00.conf:system/etc/libnfc-brcm-43341b00.conf \
     $(call copyNfcFirmware, BCM20791B3_002.004.010.0161.0000_Generic_I2CLite_NCD_Signed_configdata.ncd) \
     $(call copyNfcFirmware, BCM20791B3_002.004.010.0161.0000_Generic_PreI2C_NCD_Signed_configdata.ncd) \
     $(call copyNfcFirmware, BCM20791B5_002.006.013.0011.0000_Generic_I2C_NCD_Unsigned_configdata.ncd) \
