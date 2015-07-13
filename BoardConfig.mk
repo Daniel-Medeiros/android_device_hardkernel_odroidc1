@@ -31,4 +31,22 @@ BOARD_HAVE_BLUETOOTH := true
 BLUETOOTH_HCI_USE_USB := true
 BOARD_HAVE_BLUETOOTH_BCM := true
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/hardkernel/odroidc/bluetooth
-BOARD_BLUETOOTH_DOES_NOT_USE_RFKILL := true
+BOARD_BLUETOOTH_DOES_NOT_USE_RFKILL := trueBOARD_SEPOLICY_DIRS := \
+BOARD_SEPOLICY_DIRS := \
+    device/hardkernel/odroidc1/sepolicy
+
+BOARD_SEPOLICY_UNION := \
+    file_contexts \
+    genfs_contexts \
+    adbd.te \
+    app.te \
+    device.te \
+    domain.te \
+    gpsd.te \
+    file.te \
+    mediaserver.te \
+    surfaceflinger.te \
+    system.te \
+    vold.te \
+    zygote.te \
+    unlabeled.te
