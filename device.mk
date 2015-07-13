@@ -23,4 +23,8 @@ endif
 PRODUCT_COPY_FILES := \
 	$(LOCAL_KERNEL):kernel
 
-$(call inherit-product-if-exists, vendor/hardkernel/odroidc1/device-vendor.mk)
+# Wifi config
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/wifi/rt2870.bin:root/lib/firmware/rt2870.bin \
+    device/hardkernel/odroidc/wifi/RT2870STA.dat:system/etc/Wireless/RT2870STA/RT2870STA.dat \
+    device/hardkernel/odroidc/wifi/wifi_id_list.txt:system/etc/wifi_id_list.txt
