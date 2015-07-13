@@ -35,6 +35,11 @@ PRODUCT_CHARACTERISTICS := tablet
 PRODUCT_AAPT_CONFIG := normal hdpi xhdpi xxhdpi
 PRODUCT_AAPT_PREF_CONFIG := xhdpi xxhdpi
 
+
+# GPS
+PRODUCT_PACKAGES += \
+    gps.odroidc
+
 PRODUCT_COPY_FILES += \
     device/hardkernel/odroidc1/idc/ft5x06.idc:system/usr/idc/ft5x06.idc \
     device/hardkernel/odroidc1/idc/pixcir168.idc:system/usr/idc/pixcir168.idc \
