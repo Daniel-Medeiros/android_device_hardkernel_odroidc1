@@ -32,6 +32,8 @@ PRODUCT_COPY_FILES += \
 
 
 PRODUCT_CHARACTERISTICS := tablet
+PRODUCT_AAPT_CONFIG := normal hdpi xhdpi xxhdpi
+PRODUCT_AAPT_PREF_CONFIG := xhdpi xxhdpi
 PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/rootdir/init.odroidc.rc:root/init.odroidc.rc \
 	$(LOCAL_PATH)/rootdir/init.odroidc.usb.rc:root/init.odroidc.usb.rc \
