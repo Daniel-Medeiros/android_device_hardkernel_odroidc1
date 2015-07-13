@@ -35,6 +35,9 @@ PRODUCT_CHARACTERISTICS := tablet
 PRODUCT_AAPT_CONFIG := normal hdpi xhdpi xxhdpi
 PRODUCT_AAPT_PREF_CONFIG := xhdpi xxhdpi
 
+#Camera & Sensors Hal
+PRODUCT_PACKAGES += \
+	camera.amlogic
 
 # GPS
 PRODUCT_PACKAGES += \
