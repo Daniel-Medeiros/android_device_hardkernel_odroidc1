@@ -20,4 +20,4 @@ PRODUCT_NAME := full_odroidc1
 PRODUCT_DEVICE := odroidc1
 PRODUCT_BRAND := Android
 PRODUCT_MODEL := odroidc1
-PRODUCT_MANUFACTURER := hardkernel
+PRODUCT_MANUFACTURER := HardKernel Co., Ltd.
