@@ -21,6 +21,8 @@ TARGET_ARCH := arm
 TARGET_ARCH_VARIANT := armv7-a-neon
 TARGET_CPU_ABI := armeabi-v7a
 TARGET_CPU_ABI2 := armeabi
+TARGET_KERNEL_CONFIG := odroidc_defconfig
+TARGET_KERNEL_SOURCE := kernel/hardkernel/odroidc1
 
 TARGET_BOOTLOADER_BOARD_NAME := odroidc
 TARGET_BOARD_PLATFORM := amlogic
