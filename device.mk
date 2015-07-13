@@ -31,6 +31,7 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.usb.accessory.xml:system/etc/permissions/android.hardware.usb.accessory.xml
 
 
+PRODUCT_CHARACTERISTICS := tablet
 PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/rootdir/init.odroidc.rc:root/init.odroidc.rc \
 	$(LOCAL_PATH)/rootdir/init.odroidc.usb.rc:root/init.odroidc.usb.rc \
