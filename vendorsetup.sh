@@ -13,5 +13,6 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
-
+add_lunch_combo full_odroidc1-eng
+add_lunch_combo full_odroidc1-user
 add_lunch_combo full_odroidc1-userdebug
