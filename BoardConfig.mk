@@ -14,8 +14,6 @@
 # limitations under the License.
 #
 
-# Use the non-open-source parts, if they're present
--include vendor/hardkernel/odroidc1/BoardConfigVendor.mk
 
 TARGET_ARCH := arm
 TARGET_ARCH_VARIANT := armv7-a-neon
