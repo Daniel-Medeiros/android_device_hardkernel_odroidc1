@@ -30,6 +30,14 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.usb.host.xml:system/etc/permissions/android.hardware.usb.host.xml \
     frameworks/native/data/etc/android.hardware.usb.accessory.xml:system/etc/permissions/android.hardware.usb.accessory.xml
 
+
+PRODUCT_COPY_FILES += \
+	$(LOCAL_PATH)/rootdir/init.odroidc.rc:root/init.odroidc.rc \
+	$(LOCAL_PATH)/rootdir/init.odroidc.usb.rc:root/init.odroidc.usb.rc \
+	$(LOCAL_PATH)/rootdir/ueventd.odroidc.rc:root/ueventd.odroidc.rc \
+	$(LOCAL_PATH)/rootdir/fstab.odroidc:root/fstab.odroidc	\
+	$(LOCAL_PATH)/rootdir/init.odroidc.board.rc:root/init.odroidc.board.rc
+
 # Wifi config
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/wifi/rt2870.bin:root/lib/firmware/rt2870.bin \
