@@ -1,6 +1,34 @@
 [
   {
-    "repository": "placeholder",
-    "target_path": "placeholder"
+    "repository": "android_hardware_amlogic_audio",
+    "target_path": "hardware/amlogic/audio"
+  },
+  {
+    "repository": "android_hardware_amlogic_gralloc",
+    "target_path": "hardware/amlogic/gralloc"
+  },
+  {
+    "repository": "android_hardware_amlogic_hwcomposer",
+    "target_path": "hardware/amlogic/hwcomposer"
+  },
+  {
+    "repository": "android_hardware_amlogic_libstagefrighthw",
+    "target_path": "hardware/amlogic/libstagefrighthw"
+  },
+  {
+    "repository": "android_hardware_amlogic_screen_source",
+    "target_path": "hardware/amlogic/screen_source"
+  },
+  {
+    "repository": "android_hardware_amlogic_mali",
+    "target_path": "hardware/amlogic/mali"
+  },
+  {
+    "repository": "android_hardware_amlogic_wifi",
+    "target_path": "hardware/amlogic/wifi"
+  },
+  {
+    "repository": "android_hardware_amlogic_usbctrl",
+    "target_path": "hardware/amlogic/usbctrl"
   }
 ]
